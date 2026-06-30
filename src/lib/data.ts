@@ -150,6 +150,12 @@ export const education = [
     period: '2023 – Present',
     score: 'CGPA: 7.72',
   },
+  {
+    institution: 'Prakriya International School',
+    degree: 'Higher Secondary Education',
+    period: '2021 – 2023',
+    score: 'Percentage: 81.3%',
+  },
 ];
 
 export const projects: Project[] = [
