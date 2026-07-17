@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { navItems, profile } from '@/lib/data';
@@ -11,6 +12,8 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState<string>('');
+  const pathname = usePathname();
+  const isHome = pathname === '/';
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -59,10 +62,11 @@ export function Navbar() {
         <ul className="hidden md:flex items-center gap-1">
           {navItems.map((item, i) => {
             const isActive = active === item.href.replace('#', '');
+            const href = isHome ? item.href : `/${item.href}`;
             return (
               <li key={item.href}>
                 <Link
-                  href={item.href}
+                  href={href}
                   className={cn(
                     'group relative px-3 py-2 font-mono text-sm transition-colors',
                     isActive ? 'text-accent' : 'text-ink-1 hover:text-ink-0',
@@ -111,7 +115,7 @@ export function Navbar() {
               {navItems.map((item, i) => (
                 <li key={item.href}>
                   <Link
-                    href={item.href}
+                    href={isHome ? item.href : `/${item.href}`}
                     onClick={() => setOpen(false)}
                     className="block py-3 font-mono text-ink-1 hover:text-accent transition-colors"
                   >

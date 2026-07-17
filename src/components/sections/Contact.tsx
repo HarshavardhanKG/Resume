@@ -1,14 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Phone, ArrowUpRight } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowUpRight } from 'lucide-react';
 import { Section } from '@/components/ui/Section';
 import { Button } from '@/components/ui/Button';
 import { profile, socials } from '@/lib/data';
 
 const channels = [
   { label: 'Email', value: profile.email, href: `mailto:${profile.email}`, icon: Mail },
-  { label: 'Phone', value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, '')}`, icon: Phone },
   { label: 'GitHub', value: '@HarshavardhanKG', href: socials.github, icon: Github },
   { label: 'LinkedIn', value: 'in/harshavardhan-k-g', href: socials.linkedin, icon: Linkedin },
 ];

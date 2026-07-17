@@ -1,4 +1,5 @@
-import { FileText } from 'lucide-react';
+import Link from 'next/link';
+import { ArrowLeft, FileText } from 'lucide-react';
 import { Section } from '@/components/ui/Section';
 import { getCertGroupsWithFiles } from '@/lib/certificates';
 
@@ -13,6 +14,14 @@ export default async function CertificatesPage() {
 
   return (
     <div className="pt-24">
+      <div className="container-px max-w-7xl mx-auto pt-4 pb-2">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 font-mono text-sm text-ink-2 hover:text-accent transition-colors"
+        >
+          <ArrowLeft size={14} /> Back to home
+        </Link>
+      </div>
       <Section
         label="// Credentials"
         title="Certificates."

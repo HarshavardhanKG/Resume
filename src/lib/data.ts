@@ -49,7 +49,7 @@ export const profile = {
   initials: 'HKG',
   role: 'Full Stack Developer',
   tagline: 'Building blockchain & AI driven web experiences',
-  location: 'Coimbatore, India',
+  location: 'Anywhere in India',
   email: 'harshavardhan041104@gmail.com',
   phone: '+91 88078 11044',
   resumeUrl: '/resume.pdf',
@@ -219,7 +219,7 @@ export const projects: Project[] = [
       'Resource tracking across shelters and supply chains.',
       'Inter agency coordination dashboard.',
     ],
-    links: { github: '', live: '', caseStudy: true },
+    links: { github: '', live: 'https://ready-nation.vercel.app/', caseStudy: false },
     status: 'shipped',
   },
 ];

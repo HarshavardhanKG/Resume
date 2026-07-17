@@ -32,7 +32,7 @@ export function About({ certCounts }: AboutProps) {
           <div className="pt-4 flex flex-wrap gap-2">
             <Badge variant="accent">Production builder</Badge>
             <Badge variant="accent">Smart India Hackathon 2025</Badge>
-            <Badge variant="accent">Bechtel Intern (Upcoming)</Badge>
+            <Badge variant="accent">Bechtel Intern</Badge>
           </div>
         </motion.div>
 

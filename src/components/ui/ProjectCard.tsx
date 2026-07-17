@@ -59,12 +59,23 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
 
       {/* Links */}
       <div className="mt-6 pt-5 border-t border-line flex items-center justify-between">
-        <Link
-          href={`/projects/${project.slug}`}
-          className="inline-flex items-center gap-1.5 font-mono text-sm text-accent hover:text-white transition-colors"
-        >
-          Read case study <ArrowUpRight size={14} />
-        </Link>
+        {project.links.live && !project.links.caseStudy ? (
+          <a
+            href={project.links.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 font-mono text-sm text-accent hover:text-white transition-colors"
+          >
+            View project <ArrowUpRight size={14} />
+          </a>
+        ) : (
+          <Link
+            href={`/projects/${project.slug}`}
+            className="inline-flex items-center gap-1.5 font-mono text-sm text-accent hover:text-white transition-colors"
+          >
+            Read case study <ArrowUpRight size={14} />
+          </Link>
+        )}
         <div className="flex items-center gap-2">
           {hasGithub ? (
             <a
