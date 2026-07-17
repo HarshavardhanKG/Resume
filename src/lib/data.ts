@@ -150,7 +150,7 @@ export const education = [
     institution: 'Sri Krishna College of Engineering and Technology',
     degree: 'B.Tech Information Technology',
     period: '2023 – Present',
-    score: 'CGPA: 7.72',
+    score: 'CGPA: 7.74',
   },
   {
     institution: 'Prakriya International School',
