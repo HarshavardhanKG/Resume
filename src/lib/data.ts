@@ -56,7 +56,7 @@ export const profile = {
   bio: [
     "I'm a B.Tech Information Technology student at Sri Krishna College of Engineering and Technology, passionate about emerging technologies and AI innovation.",
     "I've built and shipped production systems including a blockchain integrated civic platform for the Jharkhand Government at Smart India Hackathon 2025, a functional online voting system used for live club elections, and a disaster preparedness and response system.",
-    "Starting my paid internship at Bechtel in May 2026, where I'll contribute technical and analytical skills to a professional engineering project environment.",
+    "I've completed my internship at Bechtel (Information & Digital – I&D), where I worked on CaseStudy, a production engineering application built on React/TypeScript and a .NET 8 Clean Architecture backend.",
   ],
   rotatingTaglines: [
     'Full Stack Developer.',
@@ -136,10 +136,12 @@ export const experience: ExperienceEntry[] = [
     end: 'Jun 10, 2026',
     location: 'Gurugram, India - On-Site',
     bullets: [
-      'Upcoming paid internship at a global engineering and construction firm.',
-      'Selected to contribute technical and analytical skills in a professional project environment.',
+      'Fixed state management bugs and optimized navigation flows to cut redundant API calls',
+      'Built a dynamic, responsive card grid layout using React hooks and ResizeObserver',
+      'Introduced Jest testing for previously untested frontend logic',
+      'Closed out my internship with a full security and code-quality assessment of the application, covering everything from configuration hygiene to authentication handling',
     ],
-    tags: ['Internship', 'Information & Digital'],
+    tags: ['Paid Internship', 'Information & Digital'],
   },
 ];
 
@@ -178,7 +180,7 @@ export const projects: Project[] = [
       'Developed against a real problem statement from the Jharkhand Government.',
     ],
     links: { github: '', live: '', caseStudy: true },
-    status: 'shipped',
+    status: 'in-progress',
   },
   {
     slug: 'online-voting-platform',
@@ -198,7 +200,7 @@ export const projects: Project[] = [
       'Database backed vote storage with integrity constraints.',
     ],
     links: { github: '', live: '', caseStudy: true },
-    status: 'shipped',
+    status: 'in-progress',
   },
   {
     slug: 'disaster-management-system',
@@ -218,7 +220,7 @@ export const projects: Project[] = [
       'Inter agency coordination dashboard.',
     ],
     links: { github: '', live: '', caseStudy: true },
-    status: 'in-progress',
+    status: 'shipped',
   },
 ];
 
