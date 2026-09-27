@@ -133,7 +133,7 @@ export const experience: ExperienceEntry[] = [
     role: 'Information & Digital Intern',
     company: 'Bechtel',
     start: 'May 18, 2026',
-    end: 'Jun 10, 2026',
+    end: 'Jul 10, 2026',
     location: 'Gurugram, India - On-Site',
     bullets: [
       'Fixed state management bugs and optimized navigation flows to cut redundant API calls',
@@ -150,7 +150,7 @@ export const education = [
     institution: 'Sri Krishna College of Engineering and Technology',
     degree: 'B.Tech Information Technology',
     period: '2023 – Present',
-    score: 'CGPA: 7.74',
+    score: 'CGPA: 7.80',
   },
   {
     institution: 'Prakriya International School',
